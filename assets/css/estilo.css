@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-header {
+    display: flex;
+    margin: 15px;
+}
+
+.text-menu {
+    font-size: 14px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.pontinhos {
+    width: 40px;
+    height: 40px;
+    margin: -10px 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pontinhos img {
+    width: 16px;
+}
+
+.pontinhos:hover {
+    background-color:   #dcdcdd;
+    border-radius: 20px;
+}
+
+.img-perfil {
+    margin-top: -10px;
+}
+
+.img-perfil img {
+    width: 35px;
+    border-radius: 25px;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li a{
+    margin: 5px;
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+.flex-column {
+    flex-direction: column;
+    align-items: center;
+}
+
+/***************************************************/
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 57px auto;    
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 250px;
+}
+.barra-pesquisa {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px  15px;
+    border: 1px solid  #dfe1e5;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+.barra-pesquisa input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 380px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+.barra-pesquisa img {
+width: 25px;
+margin: 2px;
+}
+
+.barra-pesquisa:hover {
+    box-shadow: 0px 0px 7px #dcdcdd;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    margin: 30px;
+    display: flex;
+}
+
+.buttons input {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.buttons input:hover {
+    box-shadow: 2px 2px 10px #e8e8e8;
+}
+
+/*******************************************/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: px;
+    font-size: 14px;
+    color: #6f6f6f;
+    background-color:  #f2f2f2;
+    height: 100%;
+    line-height: 25px;
+}
+
+footer div {
+    margin: 10px 25px;
+
+}
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer nav a {
+    color: #6f6f6f;
+}
+
+.border-bottom {
+    border: 1px solid (176,196,222,2px);
+
+}    
+
+/********************************************************/
+
+@media (max-width: 730px) {
+
+    footer {
+        font-size: 15px;
+    }
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .logo img {
+        width: 200px;
+    }   
+
+    .barra-pesquisa input {
+        width: auto;
+    }
+
+    footer {
+        font-size: 11px;
+    }
+
+    footer div{
+        margin: 2px 5px;
+        padding: 2px;
+    }
+
+}
